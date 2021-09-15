@@ -1,0 +1,78 @@
+.FooterWraper {
+    background: #272744;
+    height: 300px;
+    color: white;
+    margin-top: 80px;
+    width: 100%;
+    padding: 50px 0 30px;
+}
+
+.footer__ContainerFluid {
+    /*border: 1px solid white;*/
+    padding: 0;
+    width: 1440px;
+}
+
+.footer__Row > div {
+    /*border: 1px solid #e05151;*/
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer__forPartners, .footer__joinUraaa {
+    color: white;
+    background: #FF6600;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 25px;
+    margin: 40px 30px 40px 0;
+    border: none;
+    outline: none;
+}
+
+.footer__joinUraaa {
+    background: none;
+    border: 2px solid #FFFFFF;
+
+}
+
+.footer__Row > div > h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.footer__brouser {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer__brouser > h3 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.footer__brouser > h3 > div {
+    margin-right: 10px !important;
+}
+
+.footer__Row > div:last-child h3 > div {
+    margin-top: 10px !important;
+}
+
+.footer__bottom{
+    border-top: 2px solid white;
+    padding: 10px 0;
+}
+.footer__bottom_right{
+    text-align: right;
+}
+.footer__bottom_right > svg {
+    margin: 0 10px;
+}

@@ -1,0 +1,13 @@
+.signin{
+    background: #FFA381;
+}
+.signin h1{
+    color: #F2F2F2;
+    font-size: 50px;
+    text-align: center;
+}
+@media (max-width: 600px){
+    .signin{
+        background: #862704;
+    }
+}

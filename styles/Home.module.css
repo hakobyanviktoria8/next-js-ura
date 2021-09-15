@@ -1,121 +1,352 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.Home__ContainerFluid {
+    padding: 0;
+    width: 1440px;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+/*___________The same styles___________*/
+.SliderLong,
+.BestDeals,
+.Clothing,
+.TopSellers {
     width: 100%;
-    flex-direction: column;
-  }
+    margin: 30px 0;
 }
+
+.SliderLong button:first-child,
+.BestDeals button:first-child,
+.Clothing button:first-child,
+.TopSellers button:first-child {
+    left: 15px;
+    z-index: 1;
+}
+
+.SliderLong button:last-child,
+.BestDeals button:last-child,
+.Clothing button:last-child,
+.TopSellers button:last-child {
+    right: 25px;
+    z-index: 1;
+}
+
+.SliderLong button::before,
+.BestDeals button::before,
+.CategoriesComp button::before,
+.Clothing button::before,
+.Brands button::before,
+.TopSellers button::before {
+    font-size: 34px;
+    color: white;
+    opacity: 1;
+}
+
+.BestDeals__title,
+.CategoriesComp__title,
+.Clothing__title,
+.Brands__title,
+.TopSellers__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.BestDeals__title h2,
+.Clothing__title h2,
+.Brands__title h2,
+.TopSellers__title h2 {
+    color: #272444;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.BestDeals__title > span,
+.CategoriesComp__title > span,
+.Clothing__title > span,
+.Brands__title > span,
+.TopSellers__title > span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FF6600;
+    cursor: pointer;
+}
+
+.BestDeals > div > div > div > div,
+.TopSellers > div > div > div > div {
+    margin: 0 20px;
+    height: 540px;
+    border-radius: 18px;
+    background: #494950;
+    cursor: pointer;
+}
+
+.BestDeals__card,
+.TopSellers__card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    border-radius: 18px;
+    position: relative;
+    min-width: 300px;
+    width: auto;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.04)) drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08));
+}
+
+.BestDeals__card img,
+.TopSellers__card img {
+    border-radius: 18px;
+}
+
+.BestDeals__card__discount,
+.Clothing__card__discount,
+.TopSellers__card__discount {
+    background: #FF6600;
+    border-radius: 18px 0 18px 0;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+}
+
+.BestDeals__card__info,
+.TopSellers__card__info {
+    margin: 0 5%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 4%;
+    padding: 24px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.8);
+    color: #272744;
+}
+
+.BestDeals__card__info h3,
+.TopSellers__card__info h3,
+.Clothing__card_info h3 {
+    font-size: 18px;
+}
+
+.BestDeals__card__info small,
+.TopSellers__card__info small {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0 16px;
+}
+
+.BestDeals__card__rating,
+.Clothing__card__rating,
+.TopSellers__card__rating {
+    display: flex;
+    margin: 0 0 5px 0;
+}
+
+.BestDeals__card__info span,
+.TopSellers__card__info span,
+.Clothing__card__rating span {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 7px 0 0 10px;
+}
+
+.BestDeals__card__info_sale,
+.TopSellers__card__info_sale,
+.Clothing__card__info_sale {
+    font-size: 14px;
+    color: #7C7C9E;
+    font-weight: 600;
+    margin: 0;
+}
+
+.BestDeals__card__info_sale span,
+.TopSellers__card__info_sale span,
+.Clothing__card__info_sale span {
+    color: #FF6600;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.BestDeals__card__info_buttons,
+.TopSellers__card__info_buttons {
+    height: 54px;
+    margin-top: 16px;
+    display: none;
+}
+
+.BestDeals__card:hover .BestDeals__card__info_buttons,
+.TopSellers__card:hover .TopSellers__card__info_buttons {
+    display: block;
+}
+
+.BestDeals__card__info_buttons button,
+.TopSellers__card__info_buttons button {
+    height: 100%;
+    width: 115px;
+    background: linear-gradient(180deg, #FF6600 0%, #F34200 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    color: #F7F7FC;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.BestDeals__card__info_buttons button:last-child,
+.TopSellers__card__info_buttons button:last-child {
+    background: linear-gradient(180deg, #FCFCFC 0%, #F2F2F2 100%);
+    width: 54px;
+    color: #272744;
+    font-size: 30px;
+}
+
+.CategoriesComp h3,
+.Brands h3 {
+    color: #272744;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+/*___________SliderLong___________*/
+.SliderLong div > div {
+    width: 100%;
+    height: 360px;
+    border-radius: 18px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.04)) drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08));
+    cursor: pointer;
+}
+
+/*___________BestDeals___________*/
+.BestDeals__title > h2 > span {
+    font-weight: 500;
+}
+
+/*_____________CategoriesComp_____________*/
+.CategoriesComp,
+.Brands {
+    background: #F5F5F5;
+    border-radius: 18px;
+    height: 470px;
+    width: 100%;
+    margin: 30px 0;
+    padding: 40px;
+}
+
+.CategoriesComp button:first-child,
+.Brands button:first-child {
+    left: -10px;
+    z-index: 1;
+}
+
+.CategoriesComp button:last-child,
+.Brands button:last-child {
+    right: 15px;
+    z-index: 1;
+}
+
+.CategoriesComp > div > div,
+.Brands > div > div {
+    padding: 10px
+}
+
+.BestDeals > div > div,
+.TopSellers > div > div {
+    padding: 10px 0;
+}
+
+.CategoriesComp > div:last-child {
+    height: 300px;
+}
+
+.CategoriesComp__card {
+    height: 280px !important;
+}
+
+.CategoriesComp__card > div,
+.Brands__card > div {
+    border-radius: 18px;
+    /*box-shadow: 0 0 10px red;*/
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.04)) drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08));
+    cursor: pointer;
+}
+
+.CategoriesComp img {
+    width: 240px;
+    height: 280px;
+    padding: 0;
+    margin: 0;
+}
+
+/*______________Clothing______________*/
+.Clothing > div > div > div {
+    padding: 10px;
+    border-radius: 18px 18px 0 0;
+}
+
+.Clothing > div > div > div > div {
+    margin: 0 20px;
+    height: 450px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.Clothing__card_imgWraper {
+    height: 280px;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    border-radius: 18px 18px 0 0;
+}
+
+.Clothing__card_imgWraper > div {
+    border-radius: 18px 18px 0 0;
+}
+
+.Clothing__card_imgWraper img {
+    height: 280px;
+}
+
+.Clothing__card_info {
+    height: 170px;
+    border-radius: 0 0 18px 18px;
+    padding: 24px;
+    color: #272744;
+}
+
+.Clothing__card_info small, .Clothing__card_info span {
+    font-size: 14px;
+}
+
+/*_____________BrandsComp____________*/
+.Brands {
+    height: 370px;
+}
+
+.Brands > div:last-child {
+    height: 190px;
+}
+
+.Brands__card {
+    height: 170px;
+}
+
+.Brands img {
+    width: 240px;
+    height: 170px;
+    padding: 0;
+    margin: 0;
+}
+
+/*@media (max-width: 600px) {*/
+/*  .grid {*/
+/*    width: 100%;*/
+/*    flex-direction: column;*/
+/*  }*/
+/*}*/
+

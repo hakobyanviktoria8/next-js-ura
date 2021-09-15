@@ -1,0 +1,346 @@
+.Categories__ContainerFluid {
+    padding: 10px 0;
+    width: 1440px;
+    /*border: 1px solid;*/
+}
+
+.Categories__ContainerFluid_Breadcrumb {
+    /*border: 1px solid;*/
+}
+
+.Categories__ContainerFluid_SortBy {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Categories__ContainerFluid_SortBy > div {
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 2px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #7C7C9E;
+    border: 2px solid #7C7C9E;
+}
+
+.Categories__ContainerFluid_SortBy > div:first-child {
+    color: #FF6600;
+    border: 2px solid #FF6600;
+}
+
+.Categories__ContainerFluid_SortBy > div > span {
+    margin-left: 15px;
+}
+
+/*left menu filter*/
+.leftMenu {
+    margin-top: 40px;
+    max-width: 300px;
+}
+
+.leftMenu__price,
+.leftMenu__size,
+.leftMenu__color,
+.leftMenu__brand {
+    border: 1px solid #C8C7CC;
+    box-sizing: border-box;
+    border-radius: 18px;
+    padding: 16px;
+    font-size: 16px;
+    color: #272744;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.leftMenu__price_title,
+.leftMenu__price_inputs,
+.leftMenu__size_title,
+.leftMenu__color_title,
+.leftMenu__brand_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/*left Menu price*/
+.leftMenu__price_inputs input {
+    padding: 4px 8px;
+    border: 1px solid #C8C7CC;
+    border-radius: 18px;
+    width: 120px;
+    outline: none;
+}
+
+.leftMenu__price_range {
+    margin-top: 16px;
+}
+
+.leftMenu__price_range > div {
+    width: 100%;
+}
+
+.leftMenu__price_range > div > span {
+    color: #b31e1e;
+}
+
+.leftMenu__price_range > div > span > span:nth-of-type(1) {
+    background-color: grey;
+}
+
+.leftMenu__price_range > div > span > span:nth-of-type(2) {
+    background-color: #FF7E27;
+    height: 4px;
+}
+
+.leftMenu__price_range > div > span > span:nth-of-type(3),
+.leftMenu__price_range > div > span > span:nth-of-type(4) {
+    width: 32px;
+    height: 24px;
+    margin-top: -10px;
+    border-radius: 18px;
+    background-color: #FF7E27;
+    color: #FF7E27;
+}
+
+.leftMenu__price_range > div > span > span:nth-of-type(3) {
+    margin-left: 0;
+}
+
+.leftMenu__price_range > div > span > span:nth-of-type(4) {
+    margin-left: -30px;
+}
+
+/*left Menu size*/
+.leftMenu__size_search {
+    border-bottom: 1px solid #272744;
+    margin-bottom: 25px;
+}
+
+.leftMenu__size_search > div {
+    margin: 0;
+    display: flex;
+}
+
+.leftMenu__size_search > div > div:first-child {
+    padding-right: 10px;
+}
+
+.leftMenu__size_checkboxs {
+    /*border: 1px solid;*/
+}
+
+.leftMenu__size_checkboxs div label span:last-child {
+    color: #272744;
+    font-size: 16px;
+}
+
+.leftMenu__size_checkboxs input {
+    display: none;
+}
+
+.leftMenu__size_checkboxs svg {
+    /*color: #FF7E27;*/
+    height: 30px;
+    width: 30px;
+}
+
+/*.leftMenu__size_checkbox > form > label {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.leftMenu__size_checkbox input {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.leftMenu__size_checkbox > form > label >  span {*/
+/*    background-color: #FF7E27;*/
+/*    border-radius: 4px;*/
+/*    border: 1px solid #272744;*/
+/*    margin-right: 8px;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*}*/
+
+/*.leftMenu__size_checkbox > form > label > span:after {*/
+/*    left: 7px;*/
+/*    top: 2px;*/
+/*    width: 10px;*/
+/*    height: 15px;*/
+/*    border: solid #fff;*/
+/*    border-width: 0 3px 3px 0;*/
+/*    transform: rotate(40deg);*/
+/*}*/
+
+/*left Menu color*/
+.CheckboxColor_row {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.CheckboxColor_row span:first-child {
+    width: 32px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #e0dede;
+    box-sizing: border-box;
+    border-radius: 18px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.PurpleBerry {
+    background: #710163 !important;
+}
+
+.Orange {
+    background: #EF6A32 !important;
+}
+
+.Teal {
+    background: #7BCCC5 !important;
+}
+
+.PinkLorem {
+    background: #FCC5C0 !important;
+}
+
+.Black {
+    background: #000 !important;
+}
+
+.Red {
+    background: #DD0931 !important;
+}
+
+.Yellow {
+    background: #FBBF45 !important;
+}
+
+.TealLorem {
+    background: #CDEBC5 !important;
+}
+
+.PinkIpsum {
+    background: #FDDFDD !important;
+}
+
+
+/*left Menu brand*/
+.leftMenu__brand {
+    border: none;
+    background: #FFF8F3;
+}
+
+/*right menu*/
+.rightMenu {
+    min-width: 1140px;
+    margin-top: 40px;
+    /*border: 1px solid;*/
+
+}
+
+/*card*/
+.Categories__card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    width: 250px;
+    margin-left: 35px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.Categories__card_imgWraper {
+    width: 250px;
+    border-radius: 18px 18px 0 0;
+    height: auto;
+}
+
+.Categories__card_imgWraper > div {
+    position: relative !important;
+}
+
+.Categories__card_imgWraper > div > img {
+    position: inherit !important;
+    width: 250px !important;
+    height: 100% !important;
+}
+
+.Categories__card_imgWraper img {
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+}
+
+.Categories__card__discount {
+    background: #FF6600;
+    border-radius: 18px 0 18px 0;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+}
+
+.Categories__card_info {
+    height: auto;
+    border-radius: 0 0 18px 18px;
+    padding: 24px;
+    color: #272744;
+}
+
+.Categories__card_info h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Categories__card_info small,
+.Categories__card_info span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Categories__card_info small {
+    margin: 8px 0 16px;
+}
+
+.Categories__card__rating span {
+    margin: 7px 0 0 10px;
+}
+
+.Categories__card__info_sale {
+    font-size: 14px;
+    color: #7C7C9E;
+    font-weight: 600;
+    margin: 0;
+}
+
+.Categories__card__info_sale > span {
+    color: #FF6600;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Categories__card__rating {
+    display: flex;
+    margin: 0 0 5px 0;
+}
+
+.Categories__card_info p {
+    margin: 0;
+}
